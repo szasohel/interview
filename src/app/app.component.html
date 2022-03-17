@@ -1,12 +1,24 @@
-<app-form></app-form>
+<ol>
+  <li>Display the input value after My name is :</li>
+  <li>Use the common.service to make an api call to 'https://api.agify.io?name=<b>pass input value here</b>' using the
+    input value</li>
+  <li>Display the age value from api response after My age is : </li>
+  <li>Use the color from drop down to paint your name and age</li>
+</ol>
 
-<h1>My name is : {{value}}</h1>
+
+<main>
+  <app-form></app-form>
+
+  <h1>My name is : {{name}}</h1>
+  <h1>My age is : {{age}}</h1>
 
 
-<!-- <select name="color" id="color">
-  <option value="red">Red</option>
-  <option value="blue">Blue</option>
-  <option value="green">Red</option>
-  <option value="orange">Red</option>
-</select> -->
-
+  <label style="font-weight: bold;" for="">Select a color: </label>
+  <select name="color" id="color">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+  </select>
+</main>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Subject, timer} from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,12 @@ import { Subject, timer} from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  value = '';
+  name = '';
+  age = '';
   color:any;
+
+  constructor(){
+  }
 
 }
 
